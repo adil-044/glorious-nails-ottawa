@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand from gloriousnailsandspa.ca — plum #6A1B9A, blush #EC5598 */
+  --bg: oklch(0.97 0.012 320);
+  --surface: oklch(0.99 0.006 320);
+  --line: oklch(0.88 0.02 320);
+  --ink: oklch(0.24 0.04 320);
+  --muted: oklch(0.48 0.03 320);
+  --faint: oklch(0.62 0.02 320);
+  --plum: #6a1b9a;
+  --plum-deep: #4e1274;
+  --plum-ink: #1d0a2e;
+  --plum-soft: oklch(0.94 0.03 320);
+  --blush: #ec5598;
+  --blush-deep: #d63d82;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  color: var(--ink);
+  background: var(--bg);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  font-weight: 400;
+}
+
+::selection {
+  background: var(--plum);
+  color: white;
+}
+
+.kicker {
+  @apply text-[11px] font-semibold uppercase tracking-[0.22em];
+  color: var(--plum);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition;
+  background: var(--blush);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--blush-deep);
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition border;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  border-color: var(--plum);
+  color: var(--plum);
+}
+
+.btn-ghost-light {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition border;
+  border-color: rgba(255, 255, 255, 0.35);
+  color: white;
+}
+.btn-ghost-light:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-pad {
+  @apply mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24;
+}
+
+.soft-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+}
+
+.hero-dot {
+  height: 0.375rem;
+  width: 0.375rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  transition: width 0.3s var(--ease), background 0.3s var(--ease);
+}
+.hero-dot.is-on {
+  width: 2rem;
+  background: var(--blush);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}

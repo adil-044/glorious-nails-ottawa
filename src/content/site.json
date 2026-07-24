@@ -1,0 +1,126 @@
+{
+  "brand": "Glorious Nails & Spa",
+  "tagline": "Where beauty is discovered",
+  "description": "High-quality nails, skin care, and lash extensions in a hygienic, luxurious studio at Lansdowne — TD Place, The Glebe.",
+  "rating": 4.8,
+  "reviewsCount": 70,
+  "ratingLabel": "Highly recommended",
+  "phone": "(613) 680-8899",
+  "email": "contact@gloriousnailsandspa.ca",
+  "instagram": "https://www.instagram.com/glorious.nailsspa/",
+  "address": "100 Marché Way, Unit 103, Lansdowne — TD Place, The Glebe, Ottawa, ON K1S 5J3",
+  "hours": [
+    { "day": "Monday – Wednesday", "hours": "10:00 AM – 7:00 PM" },
+    { "day": "Thursday", "hours": "10:00 AM – 7:00 PM" },
+    { "day": "Friday", "hours": "10:00 AM – 8:00 PM" },
+    { "day": "Saturday", "hours": "10:00 AM – 6:00 PM" },
+    { "day": "Sunday", "hours": "10:00 AM – 5:00 PM" }
+  ],
+  "heroSlides": [
+    { "src": "/media/fresha-0.jpg", "alt": "Glorious salon floor — pedicure chairs" },
+    { "src": "/media/fresha-4.jpg", "alt": "Manicure stations and polish wall" },
+    { "src": "/media/fresha-6.jpg", "alt": "Studio detail at Lansdowne" },
+    { "src": "/media/spa-1.jpeg", "alt": "Nail art from Glorious" },
+    { "src": "/media/spa-3.jpeg", "alt": "Custom nail designs" },
+    { "src": "/media/fresha-8.jpg", "alt": "Product wall at Glorious" }
+  ],
+  "serviceGroups": [
+    {
+      "name": "Artificial nails",
+      "from": "$70+",
+      "image": "/media/nails-1.jpg",
+      "items": [
+        { "name": "Bio Gel full set / refill", "price": "See Fresha" },
+        { "name": "Solar Gel full set / refill", "price": "See Fresha" },
+        { "name": "Acrylic Gel full set / refill", "price": "See Fresha" },
+        { "name": "Dipping powder new set / refill", "price": "See Fresha" },
+        { "name": "Shellac add-on · designs · removal", "price": "See Fresha" }
+      ]
+    },
+    {
+      "name": "Nail care",
+      "from": "$20+",
+      "image": "/media/product-1.jpeg",
+      "items": [
+        { "name": "Regular / special manicure", "price": "from $20+" },
+        { "name": "Regular / special pedicure", "price": "See Fresha" },
+        { "name": "Mani + pedi combo", "price": "See Fresha" },
+        { "name": "Kids mani + pedi (free design)", "price": "See Fresha" },
+        { "name": "Gel polish · French · nail art", "price": "See Fresha" }
+      ]
+    },
+    {
+      "name": "Skin care",
+      "from": "$50+",
+      "image": "/media/product-2.jpeg",
+      "items": [
+        { "name": "Deep exfoliation facial", "price": "from $50+" },
+        { "name": "Deep cleaning facial", "price": "See Fresha" },
+        { "name": "Back facial", "price": "See Fresha" },
+        { "name": "Hot stone + relaxation", "price": "See Fresha" }
+      ]
+    },
+    {
+      "name": "Eyelash extensions",
+      "from": "$60+",
+      "image": "/media/lashes.jpeg",
+      "items": [
+        { "name": "Classic set / refill", "price": "from $60+" },
+        { "name": "Russian volume 2D–3D / refill", "price": "See Fresha" },
+        { "name": "Mega volume / refill", "price": "See Fresha" },
+        { "name": "Russian volume 4D–6D / refill", "price": "See Fresha" },
+        { "name": "Extension removal", "price": "See Fresha" }
+      ]
+    }
+  ],
+  "gallery": [
+    "/media/spa-1.jpeg",
+    "/media/spa-2.jpeg",
+    "/media/spa-3.jpeg",
+    "/media/spa-4.jpeg",
+    "/media/wa-1.jpeg",
+    "/media/wa-2.jpeg",
+    "/media/wa-3.jpeg",
+    "/media/wa-4.jpeg",
+    "/media/fresha-2.jpg",
+    "/media/fresha-3.jpg",
+    "/media/fresha-5.jpg",
+    "/media/fresha-7.jpg",
+    "/media/fresha-9.jpg",
+    "/media/fresha-10.jpg",
+    "/media/gallery-1.jpg",
+    "/media/nails-1.jpg"
+  ],
+  "featuredReviews": [
+    {
+      "rating": 5,
+      "author": "Fatima A",
+      "text": "I had such an excellent experience with Anna! I'll never switch my nail person, I'm going on week 4 and my nails still look perfect!"
+    },
+    {
+      "rating": 5,
+      "author": "Kamia E",
+      "text": "I am super picky with my nails but they are great! Anna is amazing. I love the relationship we have and I'm always so excited to get my nails done because of her. The best! 10/10 from me."
+    },
+    {
+      "rating": 5,
+      "author": "Bev M",
+      "text": "Anna is fantastic:) Excellent service, very personable, and works really well with short nails:))) Clean shop, very professional."
+    },
+    {
+      "rating": 5,
+      "author": "Andrea V",
+      "text": "I'm very picky and Glorious nails always does a perfect job. Ana is really amazing and can do anything you ask. It's clean and hygenic, and everyone is super friendly."
+    },
+    {
+      "rating": 5,
+      "author": "Natalie I",
+      "text": "Mina is the best! Always satisfied with my nails!"
+    },
+    {
+      "rating": 5,
+      "author": "Andrea V",
+      "text": "Another flawless job done on my dip nails. Thanks Anna!"
+    }
+  ]
+}
