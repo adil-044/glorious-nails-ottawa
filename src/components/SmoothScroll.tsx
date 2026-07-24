@@ -1,33 +1,21 @@
 'use client';
 
 import { useEffect } from "react";
-import Lenis from "lenis";
-import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
 
+/** Refresh ScrollTrigger on route/load — matches Magnolia/Saco scroll feel (no Lenis). */
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    const lenis = new Lenis({
-      duration: 1.15,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-    });
-
-    lenis.on("scroll", ScrollTrigger.update);
-
-    const ticker = (time: number) => {
-      lenis.raf(time * 1000);
-    };
-    gsap.ticker.add(ticker);
-    gsap.ticker.lagSmoothing(0);
-
+    const refresh = () => ScrollTrigger.refresh();
+    refresh();
+    window.addEventListener("load", refresh);
+    window.addEventListener("resize", refresh);
     return () => {
-      gsap.ticker.remove(ticker);
-      lenis.destroy();
+      window.removeEventListener("load", refresh);
+      window.removeEventListener("resize", refresh);
     };
   }, []);
 

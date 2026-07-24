@@ -55,9 +55,11 @@ export function HeroScroll({
           start: "top top",
           end: () => `+=${window.innerHeight * Math.max(slides.length - 1, 1) * 0.95}`,
           pin: true,
-          scrub: 0.65,
+          scrub: 0.75,
+          pinSpacing: true,
           anticipatePin: 1,
           invalidateOnRefresh: true,
+          fastScrollEnd: true,
           onUpdate: (self) => {
             const idx = Math.min(
               slides.length - 1,
